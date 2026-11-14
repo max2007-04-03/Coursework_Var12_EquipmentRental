@@ -18,32 +18,32 @@ function formatDateTimeShort(iso) {
 function statusBadgeInfo(status) {
   switch (status) {
     case "PENDING":
-      return { label: "ОЧІКУЄ ПОГОДЖЕННЯ", cls: "badge-pending", symbol: "⏳" };
+      return { label: "ОЧІКУЄ ПОГОДЖЕННЯ", cls: "badge-pending", symbol: "" };
     case "CONFIRMED":
-      return { label: "ПІДТВЕРДЖЕНО", cls: "badge-confirmed", symbol: "✓" };
+      return { label: "ПІДТВЕРДЖЕНО", cls: "badge-confirmed", symbol: "" };
     case "ISSUED":
-      return { label: "ВИДАНО В ОРЕНДУ", cls: "badge-issued", symbol: "▶" };
+      return { label: "ВИДАНО В ОРЕНДУ", cls: "badge-issued", symbol: "" };
     case "RETURNED":
-      return { label: "ПОВЕРНУТО", cls: "badge-returned", symbol: "✔" };
+      return { label: "ПОВЕРНУТО", cls: "badge-returned", symbol: "" };
     case "REJECTED":
-      return { label: "ВІДХИЛЕНО", cls: "badge-rejected", symbol: "✖" };
+      return { label: "ВІДХИЛЕНО", cls: "badge-rejected", symbol: "" };
     case "CANCELLED":
-      return { label: "СКАСОВАНО", cls: "badge-cancelled", symbol: "⊘" };
+      return { label: "СКАСОВАНО", cls: "badge-cancelled", symbol: "" };
     default:
-      return { label: status, cls: "badge-neutral", symbol: "•" };
+      return { label: status, cls: "badge-neutral", symbol: "" };
   }
 }
 
 function unitConditionBadge(status) {
   switch (status) {
     case "AVAILABLE":
-      return { label: "Справний / Доступний", cls: "unit-avail", icon: "●" };
+      return { label: "Доступний", cls: "unit-avail", icon: "" };
     case "IN_MAINTENANCE":
-      return { label: "На регламентному ТО", cls: "unit-maint", icon: "⚙" };
+      return { label: "На ТО", cls: "unit-maint", icon: "" };
     case "RETIRED":
-      return { label: "Виведений з експлуатації", cls: "unit-retired", icon: "✕" };
+      return { label: "Списаний", cls: "unit-retired", icon: "" };
     default:
-      return { label: status, cls: "unit-maint", icon: "•" };
+      return { label: status, cls: "unit-maint", icon: "" };
   }
 }
 
@@ -326,11 +326,10 @@ export function EquipmentRentalApp() {
       {/* Шапка системи з перемикачем ролей та навігацією */}
       <header className="top-header" role="banner">
         <div className="brand-block">
-          <div className="brand-logo" aria-hidden="true">⚙</div>
           <div>
-            <h1 className="brand-title">EquipRent ОП — Оренда обладнання з календарем доступності</h1>
+            <h1 className="brand-title">Оренда обладнання з календарем доступності</h1>
             <p className="brand-subtitle">
-              Курсова робота з дисципліни «Веб-технології та веб-дизайн» • Варіант 12 • Виконав: Сливка М. О. (гр. АІ-243)
+              Варіант 12 | Сливка М. О., гр. АІ-243
             </p>
           </div>
         </div>
@@ -552,7 +551,7 @@ export function EquipmentRentalApp() {
                       <div className="eq-card-top">
                         <span className="eq-category-tag">{eq.category}</span>
                         <span className="eq-buffer-tag" title="Обов'язкова технічна перерва між орендами">
-                          🛠 Тех. перерва: +{eq.maintenanceBufferHours} год
+                          Тех. перерва: +{eq.maintenanceBufferHours} год
                         </span>
                       </div>
 
@@ -616,7 +615,7 @@ export function EquipmentRentalApp() {
                           className="btn-primary full-width"
                           onClick={() => handleSelectEquipmentCard(eq)}
                         >
-                          Відкрити календар доступності та забронювати →
+                          Відкрити календар та забронювати
                         </button>
                       </div>
                     </article>
@@ -665,12 +664,12 @@ export function EquipmentRentalApp() {
               <div className="calendar-panel-header">
                 <h3>Поекземплярна шкала доступності та технічних перерв (листопад 2026 р.)</h3>
                 <div className="calendar-legend" aria-label="Умовні позначення календаря">
-                  <span className="leg-item leg-free">[Вільно] Доступно</span>
-                  <span className="leg-item leg-issued">[▶ Видано] В активній оренді</span>
-                  <span className="leg-item leg-confirmed">[✓ Підтв.] Погоджено</span>
-                  <span className="leg-item leg-pending">[⏳ Очікує] Заявка на розгляді</span>
-                  <span className="leg-item leg-buffer">[🛠 Буфер] Тех. перерва</span>
-                  <span className="leg-item leg-unavail">[⚙/✕] На ТО або списано</span>
+                  <span className="leg-item leg-free">Вільно</span>
+                  <span className="leg-item leg-issued">Видано</span>
+                  <span className="leg-item leg-confirmed">Підтверджено</span>
+                  <span className="leg-item leg-pending">Очікує</span>
+                  <span className="leg-item leg-buffer">Буфер ТО</span>
+                  <span className="leg-item leg-unavail">На ТО / Списано</span>
                 </div>
               </div>
 
@@ -723,7 +722,7 @@ export function EquipmentRentalApp() {
                               return (
                                 <td key={dayStr} className="cal-cell cal-unavail">
                                   <span className="cal-cell-lbl">
-                                    {unit.conditionStatus === "IN_MAINTENANCE" ? "⚙ ТО" : "✕ Спис."}
+                                    {unit.conditionStatus === "IN_MAINTENANCE" ? "ТО" : "Спис."}
                                   </span>
                                 </td>
                               );
@@ -756,7 +755,7 @@ export function EquipmentRentalApp() {
                                   className="cal-cell cal-buffer"
                                   title={`Технічна перерва після ${matchingSlot.bookingNumber} до ${formatDateTimeShort(matchingSlot.bufferEndsAt)}`}
                                 >
-                                  <span className="cal-cell-lbl">🛠 Буфер</span>
+                                  <span className="cal-cell-lbl">Буфер</span>
                                 </td>
                               );
                             }
@@ -770,10 +769,10 @@ export function EquipmentRentalApp() {
 
                             const shortStatus =
                               matchingSlot.status === "ISSUED"
-                                ? "▶ Видано"
+                                ? "Видано"
                                 : matchingSlot.status === "CONFIRMED"
-                                ? "✓ Підтв."
-                                : "⏳ Очікує";
+                                ? "Підтв."
+                                : "Очікує";
 
                             return (
                               <td
@@ -807,7 +806,7 @@ export function EquipmentRentalApp() {
                           {statusBadgeInfo(s.status).symbol} {s.status}
                         </span>{" "}
                         • Оренда: <strong>{formatDateTimeShort(s.startsAt)} — {formatDateTimeShort(s.endsAt)}</strong>{" "}
-                        • 🛠 Тех. перерва до: <strong>{formatDateTimeShort(s.bufferEndsAt)}</strong>
+                        • Тех. перерва до: <strong>{formatDateTimeShort(s.bufferEndsAt)}</strong>
                       </div>
                     ))}
                   </div>
@@ -871,7 +870,7 @@ export function EquipmentRentalApp() {
                 </div>
 
                 <div className="quick-scenarios-bar">
-                  <span>Тестові пресети для демонстрації правил:</span>
+                  <span>Швидкі пресети:</span>
                   <button
                     type="button"
                     className="btn-chip"
@@ -883,7 +882,7 @@ export function EquipmentRentalApp() {
                       setBookingAlert(null);
                     }}
                   >
-                    ✓ Вільний інтервал (20.11–22.11)
+                    Вільний інтервал (20.11–22.11)
                   </button>
                   <button
                     type="button"
@@ -895,7 +894,7 @@ export function EquipmentRentalApp() {
                       setBookingAlert(null);
                     }}
                   >
-                    ⚠ Накладання на тех. перерву (16.11 10:30)
+                    Накладання на тех. перерву (16.11 10:30)
                   </button>
                   <button
                     type="button"
@@ -906,7 +905,7 @@ export function EquipmentRentalApp() {
                       setBookingAlert(null);
                     }}
                   >
-                    ✖ Кінець раніше початку
+                    Кінець раніше початку
                   </button>
                 </div>
 
@@ -945,12 +944,12 @@ export function EquipmentRentalApp() {
                     <div className={`availability-status-banner ${previewData.isAvailable ? "avail-ok" : "avail-err"}`}>
                       {previewData.isAvailable ? (
                         <>
-                          <strong>✓ ЕКЗЕМПЛЯР {previewData.inventoryCode} ДОСТУПНИЙ</strong>
+                          <strong>ЕКЗЕМПЛЯР {previewData.inventoryCode} ДОСТУПНИЙ</strong>
                           <div>Конфліктів у календарі та технічних перервах не виявлено.</div>
                         </>
                       ) : (
                         <>
-                          <strong>✖ НЕДОСТУПНО ({previewData.errorCode})</strong>
+                          <strong>НЕДОСТУПНО ({previewData.errorCode})</strong>
                           <div>{previewData.errorMessage}</div>
                         </>
                       )}
@@ -1066,13 +1065,13 @@ export function EquipmentRentalApp() {
                             </td>
                             <td>
                               <div>{formatDateTimeShort(b.startsAt)} — {formatDateTimeShort(b.endsAt)}</div>
-                              <div className="sub-cell">🛠 Буфер до: {formatDateTimeShort(b.bufferEndsAt)}</div>
+                              <div className="sub-cell">Буфер до: {formatDateTimeShort(b.bufferEndsAt)}</div>
                             </td>
                             <td>
                               <div><strong>{b.totalPriceFormatted}</strong> ({b.billedUnits} од.)</div>
                               {b.lateHours > 0 && (
                                 <div className="late-fee-tag">
-                                  ⚠ Прострочення {b.lateHours} год (+{b.lateFeeFormatted})
+                                  Прострочення {b.lateHours} год (+{b.lateFeeFormatted})
                                 </div>
                               )}
                             </td>
@@ -1147,7 +1146,7 @@ export function EquipmentRentalApp() {
                               </td>
                               <td>
                                 <span className={`status-badge ${w.status === "NOTIFIED" ? "badge-confirmed" : "badge-pending"}`}>
-                                  {w.status === "NOTIFIED" ? "🔔 СПОВІЩЕНО (СЛОТ ВІЛЬНИЙ!)" : w.status}
+                                  {w.status === "NOTIFIED" ? "СПОВІЩЕНО (СЛОТ ВІЛЬНИЙ)" : w.status}
                                 </span>
                               </td>
                               <td>{w.contactNote}</td>
@@ -1230,7 +1229,7 @@ export function EquipmentRentalApp() {
                         </td>
                         <td>
                           <div>{formatDateTimeShort(b.startsAt)} — {formatDateTimeShort(b.endsAt)}</div>
-                          <div className="sub-cell">🛠 Тех. перерва до: {formatDateTimeShort(b.bufferEndsAt)}</div>
+                          <div className="sub-cell">Тех. перерва до: {formatDateTimeShort(b.bufferEndsAt)}</div>
                           {b.actualReturnedAt && (
                             <div className="sub-cell">Факт. повернення: {formatDateTimeShort(b.actualReturnedAt)}</div>
                           )}
@@ -1265,7 +1264,7 @@ export function EquipmentRentalApp() {
                                 })
                               }
                             >
-                              ✓ Погодити
+                              Погодити
                             </button>
                           )}
                           {b.status === "CONFIRMED" && (
@@ -1279,7 +1278,7 @@ export function EquipmentRentalApp() {
                                 })
                               }
                             >
-                              ▶ Видати
+                              Видати
                             </button>
                           )}
                         </td>
@@ -1367,7 +1366,7 @@ export function EquipmentRentalApp() {
                           })
                         }
                       >
-                        ✓ Погодити заявку (CONFIRMED)
+                        Погодити заявку (CONFIRMED)
                       </button>
                       <button
                         type="button"
@@ -1378,7 +1377,7 @@ export function EquipmentRentalApp() {
                           })
                         }
                       >
-                        ✖ Відхилити заявку (REJECTED)
+                        Відхилити заявку (REJECTED)
                       </button>
                     </div>
                   )}
@@ -1407,7 +1406,7 @@ export function EquipmentRentalApp() {
                             })
                           }
                         >
-                          ✔ Зафіксувати повернення (RETURNED)
+                          Зафіксувати повернення (RETURNED)
                         </button>
                       </div>
                     </div>

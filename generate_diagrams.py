@@ -21,14 +21,14 @@ def save_fig(fig, name):
     plt.close(fig)
     print(f"Saved {name}.png & {name}.svg")
 
-def draw_box(ax, x, y, w, h, text, bold=False, bg="#FFFFFF", ec="#0F172A", lw=1.4, fontsize=10.5, align="center"):
-    rect = FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.01,rounding_size=0.015",
-                          facecolor=bg, edgecolor=ec, linewidth=lw)
+def draw_box(ax, x, y, w, h, text, bold=False, bg="#FFFFFF", ec="#000000", lw=1.2, fontsize=10.5, align="center"):
+    rect = FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.01,rounding_size=0.005",
+                          facecolor="#FFFFFF", edgecolor="#000000", linewidth=lw)
     ax.add_patch(rect)
     tx = x + w / 2 if align == "center" else x + 0.02
     ha = "center" if align == "center" else "left"
     ax.text(tx, y + h / 2, text, ha=ha, va="center", fontsize=fontsize,
-            fontweight="bold" if bold else "normal", color="#0F172A", wrap=True)
+            fontweight="bold" if bold else "normal", color="#000000", wrap=True)
 
 def draw_diamond(ax, cx, cy, w, h, text, fontsize=10):
     pts = [(cx, cy + h / 2), (cx + w / 2, cy), (cx, cy - h / 2), (cx - w / 2, cy)]

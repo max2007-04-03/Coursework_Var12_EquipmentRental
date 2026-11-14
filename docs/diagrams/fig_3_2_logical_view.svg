@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-14T09:41:14.819262</dc:date>
+    <dc:date>2026-11-14T10:04:28.310246</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -30,30 +30,30 @@ z
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 130.239 72.60534 
-L 358.461 72.60534 
-Q 359.298 72.60534 359.298 71.79453 
-L 359.298 29.09187 
-Q 359.298 28.28106 358.461 28.28106 
-L 130.239 28.28106 
-Q 129.402 28.28106 129.402 29.09187 
-L 129.402 71.79453 
-Q 129.402 72.60534 130.239 72.60534 
+    <path d="M 129.681 72.60534 
+L 359.019 72.60534 
+Q 359.298 72.60534 359.298 72.33507 
+L 359.298 28.55133 
+Q 359.298 28.28106 359.019 28.28106 
+L 129.681 28.28106 
+Q 129.402 28.28106 129.402 28.55133 
+L 129.402 72.33507 
+Q 129.402 72.60534 129.681 72.60534 
 z
-" clip-path="url(#p383a8595a6)" style="fill: #f8fafc; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p9bafbc3c0d)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
-    <path d="M 107.919 159.09174 
-L 380.781 159.09174 
-Q 381.618 159.09174 381.618 158.28093 
-L 381.618 110.17287 
-Q 381.618 109.36206 380.781 109.36206 
-L 107.919 109.36206 
-Q 107.082 109.36206 107.082 110.17287 
-L 107.082 158.28093 
-Q 107.082 159.09174 107.919 159.09174 
+    <path d="M 107.361 159.09174 
+L 381.339 159.09174 
+Q 381.618 159.09174 381.618 158.82147 
+L 381.618 109.63233 
+Q 381.618 109.36206 381.339 109.36206 
+L 107.361 109.36206 
+Q 107.082 109.36206 107.082 109.63233 
+L 107.082 158.82147 
+Q 107.082 159.09174 107.361 159.09174 
 z
-" clip-path="url(#p383a8595a6)" style="fill: #eff6ff; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p9bafbc3c0d)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 57.42 320.7132 
@@ -62,37 +62,37 @@ L 431.28 207.1998
 L 57.42 207.1998 
 L 57.42 320.7132 
 z
-" clip-path="url(#p383a8595a6)" style="fill: none; stroke-dasharray: 5.92,2.56; stroke-dashoffset: 0; stroke: #1e3a8a; stroke-width: 1.6; stroke-linejoin: miter"/>
+" clip-path="url(#p9bafbc3c0d)" style="fill: none; stroke-dasharray: 5.92,2.56; stroke-dashoffset: 0; stroke: #1e3a8a; stroke-width: 1.6; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
-    <path d="M 80.019 307.74024 
-L 408.681 307.74024 
-Q 409.518 307.74024 409.518 306.92943 
-L 409.518 237.19977 
-Q 409.518 236.38896 408.681 236.38896 
-L 80.019 236.38896 
-Q 79.182 236.38896 79.182 237.19977 
-L 79.182 306.92943 
-Q 79.182 307.74024 80.019 307.74024 
+    <path d="M 79.461 307.74024 
+L 409.239 307.74024 
+Q 409.518 307.74024 409.518 307.46997 
+L 409.518 236.65923 
+Q 409.518 236.38896 409.239 236.38896 
+L 79.461 236.38896 
+Q 79.182 236.38896 79.182 236.65923 
+L 79.182 307.46997 
+Q 79.182 307.74024 79.461 307.74024 
 z
-" clip-path="url(#p383a8595a6)" style="fill: #ffffff; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p9bafbc3c0d)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
-    <path d="M 107.919 413.14554 
-L 380.781 413.14554 
-Q 381.618 413.14554 381.618 412.33473 
-L 381.618 358.82127 
-Q 381.618 358.01046 380.781 358.01046 
-L 107.919 358.01046 
-Q 107.082 358.01046 107.082 358.82127 
-L 107.082 412.33473 
-Q 107.082 413.14554 107.919 413.14554 
+    <path d="M 107.361 413.14554 
+L 381.339 413.14554 
+Q 381.618 413.14554 381.618 412.87527 
+L 381.618 358.28073 
+Q 381.618 358.01046 381.339 358.01046 
+L 107.361 358.01046 
+Q 107.082 358.01046 107.082 358.28073 
+L 107.082 412.87527 
+Q 107.082 413.14554 107.361 413.14554 
 z
-" clip-path="url(#p383a8595a6)" style="fill: #f0fdf4; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p9bafbc3c0d)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <!-- Користувач вебсистеми -->
-    <g style="fill: #0f172a" transform="translate(188.262773 47.462512) scale(0.105 -0.105)">
+    <g transform="translate(188.262773 47.462512) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPS-BoldMT-41a" d="M 131 4238 
 L 2338 4238 
@@ -555,7 +555,7 @@ z
      <use xlink:href="#TimesNewRomanPS-BoldMT-438" transform="translate(1010.669922 0)"/>
     </g>
     <!-- (Гість, Клієнт або Менеджер прокату) -->
-    <g style="fill: #0f172a" transform="translate(154.645547 58.268653) scale(0.105 -0.105)">
+    <g transform="translate(154.645547 58.268653) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPS-BoldMT-28" d="M 2056 4334 
 L 2056 4191 
@@ -1037,7 +1037,7 @@ z
    </g>
    <g id="text_2">
     <!-- Клієнтський застосунок у браузері (React 19 SPA) -->
-    <g style="fill: #0f172a" transform="translate(133.05082 131.232103) scale(0.105 -0.105)">
+    <g transform="translate(133.05082 131.232103) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-41a" d="M 4247 116 
 L 4247 0 
@@ -2089,7 +2089,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-29" transform="translate(2086.652344 0)"/>
     </g>
     <!-- Каталог, календар доступності, калькулятор, кабінети -->
-    <g style="fill: #0f172a" transform="translate(124.278398 142.246931) scale(0.105 -0.105)">
+    <g transform="translate(124.278398 142.246931) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-433" d="M 2469 2863 
 L 2584 2081 
@@ -3113,7 +3113,7 @@ z
    </g>
    <g id="text_5">
     <!-- RentalApiController → RentalApplicationService → PricingAndAvailabilityRules -->
-    <g style="fill: #0f172a" transform="translate(70.349414 263.562389) scale(0.105 -0.105)">
+    <g transform="translate(70.349414 263.562389) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-6e" d="M 1034 2341 
 Q 1538 2947 1994 2947 
@@ -3691,7 +3691,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-73" transform="translate(3275.339844 0)"/>
     </g>
     <!-- Автентифікація сесії (HttpOnly Cookie), перевірка прав доступу й власника, -->
-    <g style="fill: #0f172a" transform="translate(74.938242 274.577217) scale(0.105 -0.105)">
+    <g transform="translate(74.938242 274.577217) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-410" d="M 2928 1419 
 L 1288 1419 
@@ -4088,7 +4088,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-2c" transform="translate(3201.822266 0)"/>
     </g>
     <!-- розрахунок вартості у копійках, контроль перетину інтервалів і тех. перерв -->
-    <g style="fill: #0f172a" transform="translate(76.610039 285.592045) scale(0.105 -0.105)">
+    <g transform="translate(76.610039 285.592045) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-445" d="M 84 2863 
 L 1431 2863 
@@ -4602,7 +4602,7 @@ z
    </g>
    <g id="text_7">
     <!-- Приватне реляційне сховище даних (SQLite 3 WAL) -->
-    <g style="fill: #0f172a" transform="translate(121.497539 382.620281) scale(0.105 -0.105)">
+    <g transform="translate(121.497539 382.620281) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPS-BoldMT-41f" d="M 2644 0 
 L 2644 116 
@@ -4962,7 +4962,7 @@ z
      <use xlink:href="#TimesNewRomanPS-BoldMT-29" transform="translate(2306.660156 0)"/>
     </g>
     <!-- Таблиці, зовнішні ключі, обмеження CHECK, транзакції, історія подій -->
-    <g style="fill: #0f172a" transform="translate(77.001328 393.406734) scale(0.105 -0.105)">
+    <g transform="translate(77.001328 393.406734) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPS-BoldMT-422" d="M 4038 4238 
 L 4038 3091 
@@ -5680,7 +5680,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p383a8595a6">
+  <clipPath id="p9bafbc3c0d">
    <rect x="7.2" y="7.2" width="474.3" height="432.432"/>
   </clipPath>
  </defs>

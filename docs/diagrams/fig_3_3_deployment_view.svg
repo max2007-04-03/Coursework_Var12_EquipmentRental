@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-14T09:41:15.347577</dc:date>
+    <dc:date>2026-11-14T10:04:28.814945</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,20 +35,20 @@ L 443.68 136.844308
 L 443.68 34.209231 
 L 61.76 34.209231 
 z
-" clip-path="url(#pbcf48dfa44)" style="fill: #f8fafc; stroke: #0f172a; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#pd169a353ad)" style="fill: #f8fafc; stroke: #0f172a; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
-    <path d="M 105.6808 123.879877 
-L 399.7592 123.879877 
-Q 400.5776 123.879877 400.5776 123.0696 
-L 400.5776 66.8904 
-Q 400.5776 66.080123 399.7592 66.080123 
-L 105.6808 66.080123 
-Q 104.8624 66.080123 104.8624 66.8904 
-L 104.8624 123.0696 
-Q 104.8624 123.879877 105.6808 123.879877 
+    <path d="M 105.1352 123.879877 
+L 400.3048 123.879877 
+Q 400.5776 123.879877 400.5776 123.609785 
+L 400.5776 66.350215 
+Q 400.5776 66.080123 400.3048 66.080123 
+L 105.1352 66.080123 
+Q 104.8624 66.080123 104.8624 66.350215 
+L 104.8624 123.609785 
+Q 104.8624 123.879877 105.1352 123.879877 
 z
-" clip-path="url(#pbcf48dfa44)" style="fill: #ffffff; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pd169a353ad)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 61.76 401.534769 
@@ -56,33 +56,33 @@ L 443.68 401.534769
 L 443.68 190.862769 
 L 61.76 190.862769 
 z
-" clip-path="url(#pbcf48dfa44)" style="fill: #f8fafc; stroke: #0f172a; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#pd169a353ad)" style="fill: #f8fafc; stroke: #0f172a; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
-    <path d="M 94.7688 291.337108 
-L 410.6712 291.337108 
-Q 411.4896 291.337108 411.4896 290.526831 
-L 411.4896 223.543938 
-Q 411.4896 222.733662 410.6712 222.733662 
-L 94.7688 222.733662 
-Q 93.9504 222.733662 93.9504 223.543938 
-L 93.9504 290.526831 
-Q 93.9504 291.337108 94.7688 291.337108 
+    <path d="M 94.2232 291.337108 
+L 411.2168 291.337108 
+Q 411.4896 291.337108 411.4896 291.067015 
+L 411.4896 223.003754 
+Q 411.4896 222.733662 411.2168 222.733662 
+L 94.2232 222.733662 
+Q 93.9504 222.733662 93.9504 223.003754 
+L 93.9504 291.067015 
+Q 93.9504 291.337108 94.2232 291.337108 
 z
-" clip-path="url(#pbcf48dfa44)" style="fill: #ffffff; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pd169a353ad)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
-    <path d="M 94.7688 385.869415 
-L 410.6712 385.869415 
-Q 411.4896 385.869415 411.4896 385.059138 
-L 411.4896 323.478092 
-Q 411.4896 322.667815 410.6712 322.667815 
-L 94.7688 322.667815 
-Q 93.9504 322.667815 93.9504 323.478092 
-L 93.9504 385.059138 
-Q 93.9504 385.869415 94.7688 385.869415 
+    <path d="M 94.2232 385.869415 
+L 411.2168 385.869415 
+Q 411.4896 385.869415 411.4896 385.599323 
+L 411.4896 322.937908 
+Q 411.4896 322.667815 411.2168 322.667815 
+L 94.2232 322.667815 
+Q 93.9504 322.667815 93.9504 322.937908 
+L 93.9504 385.599323 
+Q 93.9504 385.869415 94.2232 385.869415 
 z
-" clip-path="url(#pbcf48dfa44)" style="fill: #f0fdf4; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pd169a353ad)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <!-- «device» Клієнтський пристрій користувача (ПК / Планшет / Смартфон) -->
@@ -1199,7 +1199,7 @@ z
    </g>
    <g id="text_2">
     <!-- «executionEnvironment» Веббраузер (Microsoft Edge / Chrome / Firefox) -->
-    <g style="fill: #0f172a" transform="translate(94.673672 91.995047) scale(0.105 -0.105)">
+    <g transform="translate(94.673672 91.995047) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-ab" d="M 1588 -25 
 L 1409 -25 
@@ -2340,7 +2340,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-29" transform="translate(2977.101562 0)"/>
     </g>
     <!-- Артефакт: Клієнтський бандл React 19 + CSS Grid (порт 5173 / 5080) -->
-    <g style="fill: #0f172a" transform="translate(98.92125 103.009875) scale(0.105 -0.105)">
+    <g transform="translate(98.92125 103.009875) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-410" d="M 2928 1419 
 L 1288 1419 
@@ -3873,7 +3873,7 @@ z
    </g>
    <g id="text_4">
     <!-- «executionEnvironment» Середовище .NET 10.0 Runtime (Kestrel HTTP Server) -->
-    <g style="fill: #0f172a" transform="translate(78.742383 248.552861) scale(0.105 -0.105)">
+    <g transform="translate(78.742383 248.552861) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-421" d="M 3853 4334 
 L 3950 2894 
@@ -4309,7 +4309,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-29" transform="translate(3280.556641 0)"/>
     </g>
     <!-- Артефакти: EquipmentRental.WebApi.dll, Application.dll, Domain.dll, Infrastructure.dll -->
-    <g style="fill: #0f172a" transform="translate(64.906172 259.548002) scale(0.105 -0.105)">
+    <g transform="translate(64.906172 259.548002) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-71" d="M 2734 2947 
 L 2734 -734 
@@ -4657,7 +4657,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-6c" transform="translate(3549.599609 0)"/>
     </g>
     <!-- Порт: http://localhost:5080 (конфігурація через змінні середовища) -->
-    <g style="fill: #0f172a" transform="translate(104.996484 270.543142) scale(0.105 -0.105)">
+    <g transform="translate(104.996484 270.543142) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-41f" d="M 3294 4006 
 L 1328 4006 
@@ -4941,7 +4941,7 @@ z
    </g>
    <g id="text_5">
     <!-- «executionEnvironment» Реляційна СКБД SQLite 3 (режим журналювання WAL) -->
-    <g style="fill: #0f172a" transform="translate(73.973906 351.273819) scale(0.105 -0.105)">
+    <g transform="translate(73.973906 351.273819) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-420" d="M 1313 1984 
 L 1313 750 
@@ -5289,7 +5289,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-29" transform="translate(3371.34375 0)"/>
     </g>
     <!-- Файл БД: Data/equipment_rental.db • Схема: sql/init.sql • Дані: sql/seed.sql -->
-    <g style="fill: #0f172a" transform="translate(90.685313 362.288647) scale(0.105 -0.105)">
+    <g transform="translate(90.685313 362.288647) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-424" d="M 3444 0 
 L 1616 0 
@@ -6506,7 +6506,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pbcf48dfa44">
+  <clipPath id="pd169a353ad">
    <rect x="7.2" y="7.2" width="491.04" height="421.344"/>
   </clipPath>
  </defs>

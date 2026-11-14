@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-14T09:41:17.928190</dc:date>
+    <dc:date>2026-11-14T10:04:31.301553</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -30,60 +30,60 @@ z
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 78.198525 98.656433 
-L 371.441475 98.656433 
-Q 372.25755 98.656433 372.25755 97.854184 
-L 372.25755 34.209064 
-Q 372.25755 33.406814 371.441475 33.406814 
-L 78.198525 33.406814 
-Q 77.38245 33.406814 77.38245 34.209064 
-L 77.38245 97.854184 
-Q 77.38245 98.656433 78.198525 98.656433 
+    <path d="M 77.654475 98.656433 
+L 371.985525 98.656433 
+Q 372.25755 98.656433 372.25755 98.389016 
+L 372.25755 33.674231 
+Q 372.25755 33.406814 371.985525 33.406814 
+L 77.654475 33.406814 
+Q 77.38245 33.406814 77.38245 33.674231 
+L 77.38245 98.389016 
+Q 77.38245 98.656433 77.654475 98.656433 
 z
-" clip-path="url(#p51198140b3)" style="fill: #eff6ff; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p0bca274a6e)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
-    <path d="M 78.198525 210.971351 
-L 371.441475 210.971351 
-Q 372.25755 210.971351 372.25755 210.169101 
-L 372.25755 143.849816 
-Q 372.25755 143.047567 371.441475 143.047567 
-L 78.198525 143.047567 
-Q 77.38245 143.047567 77.38245 143.849816 
-L 77.38245 210.169101 
-Q 77.38245 210.971351 78.198525 210.971351 
+    <path d="M 77.654475 210.971351 
+L 371.985525 210.971351 
+Q 372.25755 210.971351 372.25755 210.703934 
+L 372.25755 143.314984 
+Q 372.25755 143.047567 371.985525 143.047567 
+L 77.654475 143.047567 
+Q 77.38245 143.047567 77.38245 143.314984 
+L 77.38245 210.703934 
+Q 77.38245 210.971351 77.654475 210.971351 
 z
-" clip-path="url(#p51198140b3)" style="fill: #f8fafc; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p0bca274a6e)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
-    <path d="M 78.198525 328.634598 
-L 371.441475 328.634598 
-Q 372.25755 328.634598 372.25755 327.832348 
-L 372.25755 256.164734 
-Q 372.25755 255.362485 371.441475 255.362485 
-L 78.198525 255.362485 
-Q 77.38245 255.362485 77.38245 256.164734 
-L 77.38245 327.832348 
-Q 77.38245 328.634598 78.198525 328.634598 
+    <path d="M 77.654475 328.634598 
+L 371.985525 328.634598 
+Q 372.25755 328.634598 372.25755 328.367181 
+L 372.25755 255.629901 
+Q 372.25755 255.362485 371.985525 255.362485 
+L 77.654475 255.362485 
+Q 77.38245 255.362485 77.38245 255.629901 
+L 77.38245 328.367181 
+Q 77.38245 328.634598 77.654475 328.634598 
 z
-" clip-path="url(#p51198140b3)" style="fill: #fef3c7; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p0bca274a6e)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
-    <path d="M 78.198525 440.949515 
-L 371.441475 440.949515 
-Q 372.25755 440.949515 372.25755 440.147266 
-L 372.25755 373.827981 
-Q 372.25755 373.025732 371.441475 373.025732 
-L 78.198525 373.025732 
-Q 77.38245 373.025732 77.38245 373.827981 
-L 77.38245 440.147266 
-Q 77.38245 440.949515 78.198525 440.949515 
+    <path d="M 77.654475 440.949515 
+L 371.985525 440.949515 
+Q 372.25755 440.949515 372.25755 440.682099 
+L 372.25755 373.293148 
+Q 372.25755 373.025732 371.985525 373.025732 
+L 77.654475 373.025732 
+Q 77.38245 373.025732 77.38245 373.293148 
+L 77.38245 440.682099 
+Q 77.38245 440.949515 77.654475 440.949515 
 z
-" clip-path="url(#p51198140b3)" style="fill: #dcfce7; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p0bca274a6e)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <!-- RentalApiController (EquipmentRental.WebApi) -->
-    <g style="fill: #0f172a" transform="translate(131.277656 53.374061) scale(0.095 -0.095)">
+    <g transform="translate(131.277656 53.374061) scale(0.095 -0.095)">
      <defs>
       <path id="TimesNewRomanPSMT-52" d="M 4325 0 
 L 3194 0 
@@ -817,7 +817,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-29" transform="translate(1935.994141 0)"/>
     </g>
     <!-- ──────────────────────────────────────── -->
-    <g style="fill: #0f172a" transform="translate(90.216875 63.322045) scale(0.095 -0.095)">
+    <g transform="translate(90.216875 63.322045) scale(0.095 -0.095)">
      <defs>
       <path id="TimesNewRomanPSMT-2500" d="M 4603 1669 
 L -72 1669 
@@ -869,7 +869,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-2500" transform="translate(2763.134766 0)"/>
     </g>
     <!-- + GetCatalog(...): ActionResult&lt;IReadOnlyList&lt;EquipmentTypeDto&gt;&gt; -->
-    <g style="fill: #0f172a" transform="translate(88.93957 73.27003) scale(0.095 -0.095)">
+    <g transform="translate(88.93957 73.27003) scale(0.095 -0.095)">
      <defs>
       <path id="TimesNewRomanPSMT-2b" d="M 1672 441 
 L 1672 2000 
@@ -1357,7 +1357,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-3e" transform="translate(2804.248047 0)"/>
     </g>
     <!-- + CreateBooking(request): ActionResult&lt;BookingResponseDto&gt; -->
-    <g style="fill: #0f172a" transform="translate(100.948164 83.235827) scale(0.095 -0.095)">
+    <g transform="translate(100.948164 83.235827) scale(0.095 -0.095)">
      <defs>
       <path id="TimesNewRomanPSMT-42" d="M 2956 2163 
 Q 3397 2069 3616 1863 
@@ -1512,7 +1512,7 @@ z
    </g>
    <g id="text_2">
     <!-- RentalApplicationService (EquipmentRental.Application) -->
-    <g style="fill: #0f172a" transform="translate(114.543555 164.351896) scale(0.095 -0.095)">
+    <g transform="translate(114.543555 164.351896) scale(0.095 -0.095)">
      <defs>
       <path id="TimesNewRomanPSMT-53" d="M 2934 4334 
 L 2934 2869 
@@ -1641,7 +1641,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-29" transform="translate(2288.28125 0)"/>
     </g>
     <!-- ──────────────────────────────────────── -->
-    <g style="fill: #0f172a" transform="translate(90.216875 174.299881) scale(0.095 -0.095)">
+    <g transform="translate(90.216875 174.299881) scale(0.095 -0.095)">
      <use xlink:href="#TimesNewRomanPSMT-2500"/>
      <use xlink:href="#TimesNewRomanPSMT-2500" transform="translate(70.849609 0)"/>
      <use xlink:href="#TimesNewRomanPSMT-2500" transform="translate(141.699219 0)"/>
@@ -1684,7 +1684,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-2500" transform="translate(2763.134766 0)"/>
     </g>
     <!-- + GetCatalog(...): IReadOnlyList&lt;EquipmentTypeDto&gt; -->
-    <g style="fill: #0f172a" transform="translate(119.103555 184.247865) scale(0.095 -0.095)">
+    <g transform="translate(119.103555 184.247865) scale(0.095 -0.095)">
      <use xlink:href="#TimesNewRomanPSMT-2b"/>
      <use xlink:href="#TimesNewRomanPSMT-20" transform="translate(56.396484 0)"/>
      <use xlink:href="#TimesNewRomanPSMT-47" transform="translate(81.396484 0)"/>
@@ -1737,7 +1737,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-3e" transform="translate(2169.220703 0)"/>
     </g>
     <!-- + PreviewAvailabilityAndPrice(...): AvailabilityPreviewResponseDto -->
-    <g style="fill: #0f172a" transform="translate(92.899141 194.213662) scale(0.095 -0.095)">
+    <g transform="translate(92.899141 194.213662) scale(0.095 -0.095)">
      <defs>
       <path id="TimesNewRomanPSMT-50" d="M 1313 1984 
 L 1313 750 
@@ -1884,7 +1884,7 @@ z
    </g>
    <g id="text_3">
     <!-- «interface» IRentalRepository (EquipmentRental.Domain) -->
-    <g style="fill: #0f172a" transform="translate(113.358281 274.349174) scale(0.095 -0.095)">
+    <g transform="translate(113.358281 274.349174) scale(0.095 -0.095)">
      <defs>
       <path id="TimesNewRomanPSMT-ab" d="M 1588 -25 
 L 1409 -25 
@@ -2014,7 +2014,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-29" transform="translate(2313.232422 0)"/>
     </g>
     <!-- ──────────────────────────────────────── -->
-    <g style="fill: #0f172a" transform="translate(90.216875 284.314971) scale(0.095 -0.095)">
+    <g transform="translate(90.216875 284.314971) scale(0.095 -0.095)">
      <use xlink:href="#TimesNewRomanPSMT-2500"/>
      <use xlink:href="#TimesNewRomanPSMT-2500" transform="translate(70.849609 0)"/>
      <use xlink:href="#TimesNewRomanPSMT-2500" transform="translate(141.699219 0)"/>
@@ -2057,7 +2057,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-2500" transform="translate(2763.134766 0)"/>
     </g>
     <!-- + CreateBookingAtomic(clientId, unitId, startsAt, endsAt, ...): Booking -->
-    <g style="fill: #0f172a" transform="translate(88.764414 294.262955) scale(0.095 -0.095)">
+    <g transform="translate(88.764414 294.262955) scale(0.095 -0.095)">
      <defs>
       <path id="TimesNewRomanPSMT-2c" d="M 344 -1066 
 L 344 -928 
@@ -2151,7 +2151,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-67" transform="translate(2814.306641 0)"/>
     </g>
     <!-- + ReturnEquipmentAtomic(bookingId, mgrId, notes, returnedAt): Booking -->
-    <g style="fill: #0f172a" transform="translate(82.040195 304.228752) scale(0.095 -0.095)">
+    <g transform="translate(82.040195 304.228752) scale(0.095 -0.095)">
      <use xlink:href="#TimesNewRomanPSMT-2b"/>
      <use xlink:href="#TimesNewRomanPSMT-20" transform="translate(56.396484 0)"/>
      <use xlink:href="#TimesNewRomanPSMT-52" transform="translate(81.396484 0)"/>
@@ -2223,7 +2223,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-67" transform="translate(2955.908203 0)"/>
     </g>
     <!-- + AddWaitlistEntry(...): WaitlistEntry -->
-    <g style="fill: #0f172a" transform="translate(153.462383 314.194549) scale(0.095 -0.095)">
+    <g transform="translate(153.462383 314.194549) scale(0.095 -0.095)">
      <use xlink:href="#TimesNewRomanPSMT-2b"/>
      <use xlink:href="#TimesNewRomanPSMT-20" transform="translate(56.396484 0)"/>
      <use xlink:href="#TimesNewRomanPSMT-41" transform="translate(75.896484 0)"/>
@@ -2266,7 +2266,7 @@ z
    </g>
    <g id="text_4">
     <!-- SqliteRentalRepository (EquipmentRental.Infrastructure) -->
-    <g style="fill: #0f172a" transform="translate(115.86168 394.321155) scale(0.095 -0.095)">
+    <g transform="translate(115.86168 394.321155) scale(0.095 -0.095)">
      <use xlink:href="#TimesNewRomanPSMT-53"/>
      <use xlink:href="#TimesNewRomanPSMT-71" transform="translate(55.615234 0)"/>
      <use xlink:href="#TimesNewRomanPSMT-6c" transform="translate(105.615234 0)"/>
@@ -2324,7 +2324,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-29" transform="translate(2260.546875 0)"/>
     </g>
     <!-- ──────────────────────────────────────── -->
-    <g style="fill: #0f172a" transform="translate(90.216875 404.286952) scale(0.095 -0.095)">
+    <g transform="translate(90.216875 404.286952) scale(0.095 -0.095)">
      <use xlink:href="#TimesNewRomanPSMT-2500"/>
      <use xlink:href="#TimesNewRomanPSMT-2500" transform="translate(70.849609 0)"/>
      <use xlink:href="#TimesNewRomanPSMT-2500" transform="translate(141.699219 0)"/>
@@ -2367,7 +2367,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-2500" transform="translate(2763.134766 0)"/>
     </g>
     <!-- Реалізує контракт збереження на базі Microsoft.Data.Sqlite, -->
-    <g style="fill: #0f172a" transform="translate(106.058867 414.234936) scale(0.095 -0.095)">
+    <g transform="translate(106.058867 414.234936) scale(0.095 -0.095)">
      <defs>
       <path id="TimesNewRomanPSMT-420" d="M 1313 1984 
 L 1313 750 
@@ -3058,7 +3058,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-2c" transform="translate(2475.195312 0)"/>
     </g>
     <!-- транзакції BEGIN IMMEDIATE та оповіщення черги очікування -->
-    <g style="fill: #0f172a" transform="translate(94.274414 424.200733) scale(0.095 -0.095)">
+    <g transform="translate(94.274414 424.200733) scale(0.095 -0.095)">
      <defs>
       <path id="TimesNewRomanPSMT-446" d="M 3281 116 
 L 3281 -794 
@@ -4241,7 +4241,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p51198140b3">
+  <clipPath id="p0bca274a6e">
    <rect x="7.2" y="7.2" width="435.24" height="454.608"/>
   </clipPath>
  </defs>

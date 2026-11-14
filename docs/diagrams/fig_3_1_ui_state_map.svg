@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-14T09:41:14.266207</dc:date>
+    <dc:date>2026-11-14T10:04:27.831637</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -30,117 +30,117 @@ z
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 52.119 70.5556 
-L 252.441 70.5556 
-Q 253.278 70.5556 253.278 69.7702 
-L 253.278 31.0238 
-Q 253.278 30.2384 252.441 30.2384 
-L 52.119 30.2384 
-Q 51.282 30.2384 51.282 31.0238 
-L 51.282 69.7702 
-Q 51.282 70.5556 52.119 70.5556 
+    <path d="M 51.561 70.5556 
+L 252.999 70.5556 
+Q 253.278 70.5556 253.278 70.2938 
+L 253.278 30.5002 
+Q 253.278 30.2384 252.999 30.2384 
+L 51.561 30.2384 
+Q 51.282 30.2384 51.282 30.5002 
+L 51.282 70.2938 
+Q 51.282 70.5556 51.561 70.5556 
 z
-" clip-path="url(#p490fd93c78)" style="fill: #f8fafc; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p1d72c3b204)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
-    <path d="M 52.119 154.3316 
-L 252.441 154.3316 
-Q 253.278 154.3316 253.278 153.5462 
-L 253.278 112.1818 
-Q 253.278 111.3964 252.441 111.3964 
-L 52.119 111.3964 
-Q 51.282 111.3964 51.282 112.1818 
-L 51.282 153.5462 
-Q 51.282 154.3316 52.119 154.3316 
+    <path d="M 51.561 154.3316 
+L 252.999 154.3316 
+Q 253.278 154.3316 253.278 154.0698 
+L 253.278 111.6582 
+Q 253.278 111.3964 252.999 111.3964 
+L 51.561 111.3964 
+Q 51.282 111.3964 51.282 111.6582 
+L 51.282 154.0698 
+Q 51.282 154.3316 51.561 154.3316 
 z
-" clip-path="url(#p490fd93c78)" style="fill: #f8fafc; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p1d72c3b204)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
-    <path d="M 314.379 154.3316 
-L 497.961 154.3316 
-Q 498.798 154.3316 498.798 153.5462 
-L 498.798 112.1818 
-Q 498.798 111.3964 497.961 111.3964 
-L 314.379 111.3964 
-Q 313.542 111.3964 313.542 112.1818 
-L 313.542 153.5462 
-Q 313.542 154.3316 314.379 154.3316 
+    <path d="M 313.821 154.3316 
+L 498.519 154.3316 
+Q 498.798 154.3316 498.798 154.0698 
+L 498.798 111.6582 
+Q 498.798 111.3964 498.519 111.3964 
+L 313.821 111.3964 
+Q 313.542 111.3964 313.542 111.6582 
+L 313.542 154.0698 
+Q 313.542 154.3316 313.821 154.3316 
 z
-" clip-path="url(#p490fd93c78)" style="fill: #fef3c7; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p1d72c3b204)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
-    <path d="M 52.119 243.3436 
-L 252.441 243.3436 
-Q 253.278 243.3436 253.278 242.5582 
-L 253.278 198.5758 
-Q 253.278 197.7904 252.441 197.7904 
-L 52.119 197.7904 
-Q 51.282 197.7904 51.282 198.5758 
-L 51.282 242.5582 
-Q 51.282 243.3436 52.119 243.3436 
+    <path d="M 51.561 243.3436 
+L 252.999 243.3436 
+Q 253.278 243.3436 253.278 243.0818 
+L 253.278 198.0522 
+Q 253.278 197.7904 252.999 197.7904 
+L 51.561 197.7904 
+Q 51.282 197.7904 51.282 198.0522 
+L 51.282 243.0818 
+Q 51.282 243.3436 51.561 243.3436 
 z
-" clip-path="url(#p490fd93c78)" style="fill: #f8fafc; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p1d72c3b204)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
-    <path d="M 52.119 332.3556 
-L 252.441 332.3556 
-Q 253.278 332.3556 253.278 331.5702 
-L 253.278 287.5878 
-Q 253.278 286.8024 252.441 286.8024 
-L 52.119 286.8024 
-Q 51.282 286.8024 51.282 287.5878 
-L 51.282 331.5702 
-Q 51.282 332.3556 52.119 332.3556 
+    <path d="M 51.561 332.3556 
+L 252.999 332.3556 
+Q 253.278 332.3556 253.278 332.0938 
+L 253.278 287.0642 
+Q 253.278 286.8024 252.999 286.8024 
+L 51.561 286.8024 
+Q 51.282 286.8024 51.282 287.0642 
+L 51.282 332.0938 
+Q 51.282 332.3556 51.561 332.3556 
 z
-" clip-path="url(#p490fd93c78)" style="fill: #eff6ff; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p1d72c3b204)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
-    <path d="M 314.379 332.3556 
-L 503.541 332.3556 
-Q 504.378 332.3556 504.378 331.5702 
-L 504.378 284.9698 
-Q 504.378 284.1844 503.541 284.1844 
-L 314.379 284.1844 
-Q 313.542 284.1844 313.542 284.9698 
-L 313.542 331.5702 
-Q 313.542 332.3556 314.379 332.3556 
+    <path d="M 313.821 332.3556 
+L 504.099 332.3556 
+Q 504.378 332.3556 504.378 332.0938 
+L 504.378 284.4462 
+Q 504.378 284.1844 504.099 284.1844 
+L 313.821 284.1844 
+Q 313.542 284.1844 313.542 284.4462 
+L 313.542 332.0938 
+Q 313.542 332.3556 313.821 332.3556 
 z
-" clip-path="url(#p490fd93c78)" style="fill: #fee2e2; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p1d72c3b204)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_8">
-    <path d="M 314.379 431.8396 
-L 503.541 431.8396 
-Q 504.378 431.8396 504.378 431.0542 
-L 504.378 381.8358 
-Q 504.378 381.0504 503.541 381.0504 
-L 314.379 381.0504 
-Q 313.542 381.0504 313.542 381.8358 
-L 313.542 431.0542 
-Q 313.542 431.8396 314.379 431.8396 
+    <path d="M 313.821 431.8396 
+L 504.099 431.8396 
+Q 504.378 431.8396 504.378 431.5778 
+L 504.378 381.3122 
+Q 504.378 381.0504 504.099 381.0504 
+L 313.821 381.0504 
+Q 313.542 381.0504 313.542 381.3122 
+L 313.542 431.5778 
+Q 313.542 431.8396 313.821 431.8396 
 z
-" clip-path="url(#p490fd93c78)" style="fill: #fef3c7; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p1d72c3b204)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
-    <path d="M 52.119 431.8396 
-L 252.441 431.8396 
-Q 253.278 431.8396 253.278 431.0542 
-L 253.278 381.8358 
-Q 253.278 381.0504 252.441 381.0504 
-L 52.119 381.0504 
-Q 51.282 381.0504 51.282 381.8358 
-L 51.282 431.0542 
-Q 51.282 431.8396 52.119 431.8396 
+    <path d="M 51.561 431.8396 
+L 252.999 431.8396 
+Q 253.278 431.8396 253.278 431.5778 
+L 253.278 381.3122 
+Q 253.278 381.0504 252.999 381.0504 
+L 51.561 381.0504 
+Q 51.282 381.0504 51.282 381.3122 
+L 51.282 431.5778 
+Q 51.282 431.8396 51.561 431.8396 
 z
-" clip-path="url(#p490fd93c78)" style="fill: #dcfce7; stroke: #0f172a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p1d72c3b204)" style="fill: #ffffff; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
     <path d="M 408.96 221.876 
 L 252.72 221.876 
-" clip-path="url(#p490fd93c78)" style="fill: none; stroke: #0f172a; stroke-width: 1.3; stroke-linecap: square"/>
+" clip-path="url(#p1d72c3b204)" style="fill: none; stroke: #0f172a; stroke-width: 1.3; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <!-- UI-01: Каталог обладнання -->
-    <g style="fill: #0f172a" transform="translate(87.694336 47.347406) scale(0.105 -0.105)">
+    <g transform="translate(87.694336 47.347406) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPS-BoldMT-55" d="M 150 4238 
 L 2338 4238 
@@ -653,7 +653,7 @@ z
      <use xlink:href="#TimesNewRomanPS-BoldMT-44f" transform="translate(1176.044922 0)"/>
     </g>
     <!-- пошук, фільтр категорії та періоду -->
-    <g style="fill: #0f172a" transform="translate(69.988711 58.133859) scale(0.105 -0.105)">
+    <g transform="translate(69.988711 58.133859) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPS-BoldMT-43f" d="M 3466 2922 
 L 3466 2806 
@@ -1063,7 +1063,7 @@ z
    </g>
    <g id="text_2">
     <!-- UI-02: Картка позиції та -->
-    <g style="fill: #0f172a" transform="translate(94.406133 129.906281) scale(0.105 -0.105)">
+    <g transform="translate(94.406133 129.906281) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPS-BoldMT-32" d="M 2650 0 
 L 156 0 
@@ -1213,7 +1213,7 @@ z
      <use xlink:href="#TimesNewRomanPS-BoldMT-430" transform="translate(1052.322266 0)"/>
     </g>
     <!-- календар фізичних екземплярів -->
-    <g style="fill: #0f172a" transform="translate(76.348594 140.692734) scale(0.105 -0.105)">
+    <g transform="translate(76.348594 140.692734) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPS-BoldMT-447" d="M 3366 2922 
 L 3366 2806 
@@ -1468,7 +1468,7 @@ z
    </g>
    <g id="text_4">
     <!-- UI-06: Вхід до системи -->
-    <g style="fill: #0f172a" transform="translate(353.003906 129.814406) scale(0.105 -0.105)">
+    <g transform="translate(353.003906 129.814406) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPS-BoldMT-36" d="M 3006 4325 
 L 3006 4238 
@@ -1595,7 +1595,7 @@ z
      <use xlink:href="#TimesNewRomanPS-BoldMT-438" transform="translate(955.021484 0)"/>
     </g>
     <!-- вибір облікового запису -->
-    <g style="fill: #0f172a" transform="translate(349.81043 140.600859) scale(0.105 -0.105)">
+    <g transform="translate(349.81043 140.600859) scale(0.105 -0.105)">
      <use xlink:href="#TimesNewRomanPS-BoldMT-432"/>
      <use xlink:href="#TimesNewRomanPS-BoldMT-438" transform="translate(54.003906 0)"/>
      <use xlink:href="#TimesNewRomanPS-BoldMT-431" transform="translate(111.621094 0)"/>
@@ -1685,7 +1685,7 @@ z
    </g>
    <g id="text_7">
     <!-- UI-03: Форма бронювання -->
-    <g style="fill: #0f172a" transform="translate(89.372695 217.596156) scale(0.105 -0.105)">
+    <g transform="translate(89.372695 217.596156) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPS-BoldMT-33" d="M 947 2125 
 L 947 2234 
@@ -1792,7 +1792,7 @@ z
      <use xlink:href="#TimesNewRomanPS-BoldMT-44f" transform="translate(1144.115234 0)"/>
     </g>
     <!-- вибір екземпляра, інтервалу, мети -->
-    <g style="fill: #0f172a" transform="translate(70.822969 228.382609) scale(0.105 -0.105)">
+    <g transform="translate(70.822969 228.382609) scale(0.105 -0.105)">
      <use xlink:href="#TimesNewRomanPS-BoldMT-432"/>
      <use xlink:href="#TimesNewRomanPS-BoldMT-438" transform="translate(54.003906 0)"/>
      <use xlink:href="#TimesNewRomanPS-BoldMT-431" transform="translate(111.621094 0)"/>
@@ -1861,7 +1861,7 @@ z
    </g>
    <g id="text_9">
     <!-- Надсилання POST /api/bookings -->
-    <g style="fill: #0f172a" transform="translate(81.409102 306.594047) scale(0.105 -0.105)">
+    <g transform="translate(81.409102 306.594047) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-41d" d="M 1316 2272 
 L 3284 2272 
@@ -2700,7 +2700,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-73" transform="translate(1310.994141 0)"/>
     </g>
     <!-- атомарна перевірка на сервері -->
-    <g style="fill: #0f172a" transform="translate(85.203867 317.608875) scale(0.105 -0.105)">
+    <g transform="translate(85.203867 317.608875) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-442" d="M 156 2863 
 L 2631 2863 
@@ -3068,7 +3068,7 @@ z
    </g>
    <g id="text_11">
     <!-- Стан помилки / Конфлікт 409 -->
-    <g style="fill: #0f172a" transform="translate(343.20293 305.294891) scale(0.105 -0.105)">
+    <g transform="translate(343.20293 305.294891) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-421" d="M 3853 4334 
 L 3950 2894 
@@ -3297,7 +3297,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-39" transform="translate(1202.503906 0)"/>
     </g>
     <!-- пояснення причини без втрати полів -->
-    <g style="fill: #0f172a" transform="translate(327.522656 316.290031) scale(0.105 -0.105)">
+    <g transform="translate(327.522656 316.290031) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-447" d="M 2125 1578 
 L 2125 2191 
@@ -3575,7 +3575,7 @@ z
    </g>
    <g id="text_14">
     <!-- Запис у чергу очікування (Waitlist) -->
-    <g style="fill: #0f172a" transform="translate(331.713633 403.460047) scale(0.105 -0.105)">
+    <g transform="translate(331.713633 403.460047) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-417" d="M 319 3097 
 L 319 4328 
@@ -3835,7 +3835,7 @@ z
      <use xlink:href="#TimesNewRomanPSMT-29" transform="translate(1438.033203 0)"/>
     </g>
     <!-- POST /api/waitlist → стан WAITING -->
-    <g style="fill: #0f172a" transform="translate(328.738359 414.474875) scale(0.105 -0.105)">
+    <g transform="translate(328.738359 414.474875) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPSMT-77" d="M 41 2863 
 L 1241 2863 
@@ -4426,7 +4426,7 @@ z
    </g>
    <g id="text_16">
     <!-- UI-04 / UI-05: Мої бронювання -->
-    <g style="fill: #0f172a" transform="translate(79.632305 403.474156) scale(0.105 -0.105)">
+    <g transform="translate(79.632305 403.474156) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPS-BoldMT-35" d="M 975 4238 
 L 2959 4238 
@@ -4532,7 +4532,7 @@ z
      <use xlink:href="#TimesNewRomanPS-BoldMT-44f" transform="translate(1329.630859 0)"/>
     </g>
     <!-- та панель менеджера (статус, події) -->
-    <g style="fill: #0f172a" transform="translate(68.934609 414.260609) scale(0.105 -0.105)">
+    <g transform="translate(68.934609 414.260609) scale(0.105 -0.105)">
      <defs>
       <path id="TimesNewRomanPS-BoldMT-436" d="M 1566 0 
 L 1566 116 
@@ -4860,7 +4860,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p490fd93c78">
+  <clipPath id="p1d72c3b204">
    <rect x="7.2" y="7.2" width="530.1" height="471.24"/>
   </clipPath>
  </defs>
