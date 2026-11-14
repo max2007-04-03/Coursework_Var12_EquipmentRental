@@ -1,0 +1,1203 @@
+/* ============================================================================
+ * Стилі інтерфейсу вебсистеми оренди обладнання (Варіант 12)
+ * Адаптивна сітка CSS Grid / Flexbox (контрольні точки 360px, 768px, 1280px)
+ * Відповідність WCAG 2.2 AA (контрастність >= 4.5:1, видимий фокус клавіатури)
+ * ============================================================================ */
+
+:root {
+  --bg-page: #f4f6fb;
+  --bg-surface: #ffffff;
+  --bg-subtle: #eef2f9;
+  --text-main: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #475569;
+  --border-color: #cbd5e1;
+  --primary: #1d4ed8;
+  --primary-hover: #1e40af;
+  --success-bg: #dcfce7;
+  --success-text: #14532d;
+  --success-border: #86efac;
+  --warning-bg: #fef3c7;
+  --warning-text: #78350f;
+  --warning-border: #fcd34d;
+  --danger-bg: #fee2e2;
+  --danger-text: #7f1d1d;
+  --danger-border: #fca5a5;
+  --buffer-bg: #f3e8ff;
+  --buffer-text: #581c87;
+  --focus-ring: #2563eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.45;
+  font-size: 14px;
+}
+
+/* Видимий контур фокуса для навігації клавіатурою (WCAG 2.2 2.4.7) */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Шапка */
+.top-header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  color: #ffffff;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.brand-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #2563eb;
+  border: 2px solid #93c5fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.brand-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.brand-subtitle {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #cbd5e1;
+}
+
+.auth-switcher {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.auth-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.auth-select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #94a3b8;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 13px;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+.role-pill {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.role-client {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
+.role-manager {
+  background: #fef3c7;
+  color: #78350f;
+}
+
+.role-guest {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+/* Навігація */
+.main-nav {
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 24px;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 12px 16px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nav-btn:hover {
+  color: var(--primary);
+  background: #f8fafc;
+}
+
+.nav-btn.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+  background: #eff6ff;
+}
+
+.global-banner {
+  margin: 12px 24px 0;
+  padding: 10px 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.banner-success {
+  background: var(--success-bg);
+  color: var(--success-text);
+  border: 1px solid var(--success-border);
+}
+
+.banner-error {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+  border: 1px solid var(--danger-border);
+}
+
+.banner-close {
+  background: transparent;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* Основний контейнер */
+.main-content {
+  flex: 1;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 18px 24px 32px;
+}
+
+.view-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  margin: 0 0 4px;
+  font-size: 20px;
+  color: var(--text-main);
+}
+
+.section-desc {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13.5px;
+  max-width: 820px;
+}
+
+.summary-kpi-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.kpi-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 8px 14px;
+  min-width: 125px;
+  text-align: center;
+}
+
+.kpi-highlight {
+  background: #eff6ff;
+  border-color: #93c5fd;
+}
+
+.kpi-val {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.kpi-lbl {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+
+/* Панель фільтрів */
+.filter-bar {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.6fr auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.filter-field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.filter-field input[type="text"],
+.filter-field input[type="datetime-local"],
+.filter-field select,
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 8px 10px;
+  border: 1px solid #94a3b8;
+  border-radius: 6px;
+  font-size: 13.5px;
+  color: var(--text-main);
+  background: #ffffff;
+  width: 100%;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.period-inputs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Сітка карток каталогу */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 16px;
+}
+
+.equipment-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+}
+
+.eq-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.eq-category-tag {
+  background: #dbeafe;
+  color: #1e3a8a;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 6px;
+}
+
+.eq-buffer-tag {
+  background: var(--buffer-bg);
+  color: var(--buffer-text);
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 6px;
+}
+
+.eq-title {
+  margin: 0;
+  font-size: 16.5px;
+  color: var(--text-main);
+}
+
+.eq-brand {
+  margin: -4px 0 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.eq-desc {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.eq-specs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.spec-chip {
+  background: var(--bg-subtle);
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+
+.eq-tariff-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tariff-rate {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.tariff-sub {
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+.tariff-limits {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: #e2e8f0;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.eq-units-section {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 8px;
+}
+
+.units-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.units-avail-count {
+  color: var(--success-text);
+}
+
+.units-mini-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.unit-mini-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.unit-avail {
+  background: #f0fdf4;
+  color: #14532d;
+  border: 1px solid #bbf7d0;
+}
+
+.unit-maint {
+  background: #fffbeb;
+  color: #78350f;
+  border: 1px solid #fde68a;
+}
+
+.unit-retired {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+  text-decoration: line-through;
+}
+
+.unit-code {
+  font-weight: 700;
+  font-family: "Consolas", monospace;
+}
+
+/* Кнопки */
+.btn-primary {
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-danger {
+  background: #dc2626;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-warning {
+  background: #d97706;
+  color: #ffffff;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Календар доступності */
+.details-header-bar {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.details-switch-eq {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 280px;
+}
+
+.details-switch-eq label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.details-switch-eq select {
+  padding: 7px 10px;
+  border-radius: 6px;
+  border: 1px solid #94a3b8;
+  font-weight: 600;
+}
+
+.calendar-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.calendar-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.calendar-panel-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.calendar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.leg-item {
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.leg-free {
+  background: var(--success-bg);
+  color: var(--success-text);
+  border: 1px solid var(--success-border);
+}
+
+.leg-issued {
+  background: #dbeafe;
+  color: #1e3a8a;
+  border: 1px solid #93c5fd;
+}
+
+.leg-confirmed {
+  background: #e0e7ff;
+  color: #312e81;
+  border: 1px solid #a5b4fc;
+}
+
+.leg-pending {
+  background: var(--warning-bg);
+  color: var(--warning-text);
+  border: 1px solid var(--warning-border);
+}
+
+.leg-buffer {
+  background: repeating-linear-gradient(
+    -45deg,
+    #f3e8ff,
+    #f3e8ff 6px,
+    #e9d5ff 6px,
+    #e9d5ff 12px
+  );
+  color: var(--buffer-text);
+  border: 1px solid #c084fc;
+}
+
+.leg-unavail {
+  background: #e2e8f0;
+  color: #334155;
+  border: 1px solid #94a3b8;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.availability-grid-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.availability-grid-table th,
+.availability-grid-table td {
+  border: 1px solid var(--border-color);
+  padding: 7px 6px;
+  text-align: center;
+}
+
+.availability-grid-table thead th {
+  background: #f1f5f9;
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.today-col {
+  background: #eff6ff !important;
+  border-bottom: 2px solid var(--primary) !important;
+}
+
+.today-tag {
+  font-size: 10px;
+  color: var(--primary);
+}
+
+.unit-cell-title {
+  text-align: left !important;
+  min-width: 150px;
+  background: #f8fafc;
+}
+
+.unit-inv-code {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Consolas", monospace;
+}
+
+.unit-sn {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+.unit-cell-meta {
+  text-align: left !important;
+  min-width: 180px;
+}
+
+.unit-badge-sm {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.unit-note-sm {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.selected-unit-row {
+  outline: 2px solid var(--primary);
+}
+
+.cal-cell {
+  min-width: 68px;
+  font-weight: 700;
+}
+
+.cal-free {
+  background: #f0fdf4;
+  color: #14532d;
+}
+
+.cal-issued {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
+.cal-confirmed {
+  background: #e0e7ff;
+  color: #312e81;
+}
+
+.cal-pending {
+  background: #fef3c7;
+  color: #78350f;
+}
+
+.cal-buffer {
+  background: repeating-linear-gradient(
+    -45deg,
+    #f3e8ff,
+    #f3e8ff 6px,
+    #e9d5ff 6px,
+    #e9d5ff 12px
+  );
+  color: #581c87;
+}
+
+.cal-unavail {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.cal-cell-sub {
+  font-size: 10px;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.active-slots-list {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.active-slots-list h4 {
+  margin: 0 0 8px;
+  font-size: 13px;
+}
+
+.slots-chips-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.slot-detail-chip {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12.5px;
+}
+
+/* Форма бронювання та калькулятор */
+.booking-workspace-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 16px;
+}
+
+.booking-form-card,
+.calculator-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.booking-form-card h3,
+.calculator-card h3 {
+  margin: 0 0 14px;
+  font-size: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.form-row-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.quick-scenarios-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+  background: #f8fafc;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btn-chip {
+  background: #ffffff;
+  border: 1px solid #94a3b8;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-chip:hover {
+  background: #eff6ff;
+  border-color: var(--primary);
+}
+
+.alert-box {
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.alert-title {
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.alert-success {
+  background: var(--success-bg);
+  color: var(--success-text);
+  border: 1px solid var(--success-border);
+}
+
+.alert-error {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+  border: 1px solid var(--danger-border);
+}
+
+.availability-status-banner {
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  font-size: 13px;
+}
+
+.avail-ok {
+  background: var(--success-bg);
+  color: var(--success-text);
+  border: 1px solid var(--success-border);
+}
+
+.avail-err {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+  border: 1px solid var(--danger-border);
+}
+
+.calc-dl {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.calc-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed #cbd5e1;
+  font-size: 13px;
+}
+
+.calc-row dt {
+  color: var(--text-secondary);
+}
+
+.calc-row dd {
+  margin: 0;
+  text-align: right;
+}
+
+.calc-total-row {
+  border-bottom: none;
+  padding-top: 6px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.waitlist-offer-box {
+  margin-top: 14px;
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.waitlist-offer-box h4 {
+  margin: 0 0 6px;
+  color: #78350f;
+  font-size: 14px;
+}
+
+.waitlist-offer-box p {
+  margin: 0 0 10px;
+  font-size: 12.5px;
+  color: #78350f;
+}
+
+/* Таблиці даних */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.data-table th,
+.data-table td {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.data-table thead th {
+  background: #f1f5f9;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.sub-cell {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.status-badge,
+.badge-inline {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+.badge-pending {
+  background: var(--warning-bg);
+  color: var(--warning-text);
+}
+
+.badge-confirmed {
+  background: #e0e7ff;
+  color: #312e81;
+}
+
+.badge-issued {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
+.badge-returned {
+  background: var(--success-bg);
+  color: var(--success-text);
+}
+
+.badge-rejected {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+}
+
+.badge-cancelled {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.late-fee-tag {
+  margin-top: 4px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #991b1b;
+  background: #fee2e2;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.rej-reason-text {
+  margin-top: 4px;
+  font-size: 11.5px;
+  color: #991b1b;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+/* Інспектор картки бронювання */
+.booking-Inspector-drawer {
+  margin-top: 18px;
+  background: var(--bg-surface);
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.inspector-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 12px;
+  margin-bottom: 14px;
+}
+
+.inspector-header h3 {
+  margin: 0;
+}
+
+.inspector-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.action-subcard {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.action-subcard h5 {
+  margin: 0 0 8px;
+  font-size: 13px;
+}
+
+.inline-control-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-gap {
+  margin-top: 10px;
+}
+
+.events-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.event-item {
+  background: #f8fafc;
+  border-left: 4px solid var(--primary);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12.5px;
+}
+
+.event-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-time {
+  color: var(--text-muted);
+  font-size: 11.5px;
+}
+
+.event-actor {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+
+.empty-state-box {
+  background: var(--bg-surface);
+  border: 1px dashed #94a3b8;
+  border-radius: 10px;
+  padding: 28px;
+  text-align: center;
+}
+
+.app-footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 12px 24px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Адаптивні контрольні точки (768px та 360px) згідно з Д.3.2 / Д.5.4 */
+@media (max-width: 960px) {
+  .filter-bar {
+    grid-template-columns: 1fr 1fr;
+  }
+  .booking-workspace-grid,
+  .inspector-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .top-header,
+  .main-content,
+  .main-nav {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .filter-bar,
+  .form-row-2col,
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+}
