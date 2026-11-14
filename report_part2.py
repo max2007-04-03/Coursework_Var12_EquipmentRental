@@ -138,8 +138,8 @@ def build_section_3(doc, root_dir):
     )
 
     # 3.7 Подання даних (Data View, Д.3.7)
-    add_subsection_heading(doc, "3.7 Подання даних (Data View): ER-модель, класи, DTO та словник даних")
-    add_body_p(doc, "Реляційна схема бази даних спроєктована у третій нормальній формі (3NF) і складається із 7 взаємопов’язаних таблиць: users, tariffs, equipment_types, equipment_units, bookings, rental_events та waitlist_entries. Фізичну діаграму «сутність — зв’язок» (ER-модель) наведено на рисунку 3.6, діаграму основних доменних класів — на рисунку 3.7, а діаграму структур передавання даних (DTO) — на рисунку 3.8.")
+    add_subsection_heading(doc, "3.7 Подання даних (Data View): ER-модель, класи та DTO")
+    add_body_p(doc, "Реляційна схема бази даних спроєктована у третій нормальній формі (3NF) і складається із 7 взаємопов’язаних таблиць: users, tariffs, equipment_types, equipment_units, bookings, rental_events та waitlist_entries. Фізичну діаграму «сутність-зв’язок» (ER-модель) наведено на рисунку 3.6, діаграму основних доменних класів — на рисунку 3.7, а діаграму структур передавання даних (DTO) — на рисунку 3.8. Відповідно до правил моделювання подання даних (рисунок Д.11 методичних вказівок), структури CreateBookingRequestDto, BookingResponseDto та ApiErrorResponse є пасивними контрактами вхідного та альтернативних вихідних пакетів HTTP-обміну (вони не викликають одна одну напряму), проте пов’язані з операцією POST /api/bookings і містять композитні зв’язки із вкладеними масивами подій RentalEventDto[] та помилок полів FieldErrorDto[].")
 
     add_figure(
         doc,
@@ -214,7 +214,7 @@ def build_section_3(doc, root_dir):
     )
 
     # 3.9 Подання безпеки (Security View, Д.3.9)
-    add_subsection_heading(doc, "3.9 Подання безпеки (Security View за OWASP Top 10:2025 та ASVS 5.0.0)")
+    add_subsection_heading(doc, "3.9 Подання безпеки (Security View за OWASP та ASVS 5.0)")
     add_body_p(doc, "Проєктування механізмів захисту виконано відповідно до вимог стандартів OWASP Top 10:2025 [9], OWASP Application Security Verification Standard (ASVS 5.0.0) [10] та настанов цифрової автентифікації NIST SP 800-63B-4 [11]. Матрицю загроз і реалізованих контрзаходів наведено у таблиці 3.7.")
 
     add_styled_table(
@@ -273,7 +273,7 @@ def build_section_3(doc, root_dir):
         font_size=11
     )
 
-    add_subsection_heading(doc, "3.12 Стратегія доставки та паспорт технологічного стека (Delivery View)")
+    add_subsection_heading(doc, "3.12 Стратегія доставки та паспорт стека (Delivery View)")
     add_body_p(doc, "Стратегія доставки програмного продукту базується на єдиному відтворюваному конвеєрі збирання: клієнтський застосунок компілюється засобами Vite у статичні ресурси каталогу src/EquipmentRental.WebApi/wwwroot, після чого серверне рішення EquipmentRental.sln збирається компілятором .NET SDK 10.0 і проходить автоматизований набір модульних та інтеграційних тестів. Зведений паспорт технологічного стека наведено у таблиці 3.10.")
 
     add_styled_table(

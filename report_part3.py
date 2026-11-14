@@ -10,7 +10,7 @@ def build_section_4(doc, root_dir):
     # ==========================================================================
     add_section_heading(doc, "4 РЕАЛІЗАЦІЯ ВЕБСИСТЕМИ", page_break=True)
 
-    add_subsection_heading(doc, "4.1 Структура проєкту та реалізація ключових серверних модулів")
+    add_subsection_heading(doc, "4.1 Структура проєкту та реалізація серверних модулів")
     add_body_p(doc, "Програмна реалізація вебсистеми виконана у вигляді рішення EquipmentRental.sln, що об’єднує чотири проєкти серверної частини на платформі .NET 10.0, каталог клієнтського SPA-застосунку client/, каталог SQL-скриптів sql/ та тестовий стенд tests/EquipmentRental.Tests. Діаграму ключових класів реалізації наведено на рисунку 4.1, а призначення основних файлів вихідного коду — у таблиці 4.1.")
 
     add_figure(
@@ -128,7 +128,7 @@ public static PriceCalculationResult CalculatePrice(
 }"""
     )
 
-    add_subsection_heading(doc, "4.2 Реалізація клієнтського інтерфейсу та сценаріїв роботи з даними")
+    add_subsection_heading(doc, "4.2 Реалізація клієнтського інтерфейсу та сценаріїв роботи")
     add_body_p(doc, "Клієнтська частина реалізована як односторінковий застосунок (SPA) на базі React 19 у мінімалістичному стилі без зайвих декоративних елементів. Інтерфейс забезпечує наочну роботу з каталогом позицій та фізичних екземплярів (рисунок 4.2), комбіновану фільтрацію за категорією і пошуковим запитом (рисунок 4.3), а також коректне опрацювання стану порожньої вибірки із можливістю миттєвого скидання фільтрів (рисунок 4.4).")
 
     fig_4_2_path = os.path.join(root_dir, "docs", "screenshots", "fig_4_2_catalog.png")
@@ -290,7 +290,7 @@ public static PriceCalculationResult CalculatePrice(
         font_size=10.5
     )
 
-    add_subsection_heading(doc, "4.4 Метрики коду та контроль дотримання архітектурних обмежень")
+    add_subsection_heading(doc, "4.4 Метрики коду та контроль архітектурних обмежень")
     add_body_p(doc, "Для оцінки структурної якості програмної реалізації проаналізовано кількісні метрики вихідного коду за шарами системи (таблиця 4.3) та перевірено дотримання проєктних обмежень (таблиця 4.4).")
 
     add_styled_table(
@@ -397,7 +397,7 @@ RunTest("TC-IT-05", "Автоматичний перехід Waitlist у NOTIFIE
 });"""
     )
 
-    add_subsection_heading(doc, "5.4 Перевірка адаптивності верстки та доступності інтерфейсу (WCAG 2.2 AA)")
+    add_subsection_heading(doc, "5.4 Перевірка адаптивності верстки та доступності (WCAG 2.2)")
     add_body_p(doc, "Перевірку адаптивності клієнтського інтерфейсу виконано на трьох нормативних контрольних точках ширини вікна перегляду: 360px (мобільний смартфон), 768px (планшет) та 1280px (настільний монітор). Перевірку поведінки макета на вузьких екранах проілюстровано на рисунку 5.1, а результати інструментального аудиту адаптивності й доступності за стандартом WCAG 2.2 (рівень AA) [8] зведено у таблиці 5.3.")
 
     fig_5_1_path = os.path.join(root_dir, "docs", "screenshots", "fig_5_1_responsive.png")
@@ -407,7 +407,7 @@ RunTest("TC-IT-05", "Автоматичний перехід Waitlist у NOTIFIE
             fig_5_1_path,
             "5.1",
             "Перевірка адаптивної верстки інтерфейсу на контрольних точках 768px (планшет) та 360px (мобільний екран)",
-            width_mm=140
+            width_mm=90
         )
     else:
         add_screenshot_placeholder(
@@ -512,7 +512,7 @@ def build_conclusions_and_refs(doc):
     add_bullet_p(doc, "5. Підтверджено високу якість програмного продукту: ", "успішно пройдено 12 із 12 модульних та інтеграційних автотестів, верифіковано адаптивність верстки на контрольних точках 360px, 768px і 1280px та відповідність критеріям доступності WCAG 2.2 AA. Під час навантажувального тестування при 25 одночасних віртуальних користувачах досягнуто пропускної здатності 5 908,3 запит/с при затримці p95 = 4,55 мс та нульовій частці технічних помилок.")
 
     # ==========================================================================
-    # ПЕРЕЛІК ДЖЕРЕЛ (41 джерело за ДСТУ 8302:2015, с. 89–92 методички)
+    # ПЕРЕЛІК ДЖЕРЕЛ (25 джерел за ДСТУ 8302:2015)
     # ==========================================================================
     add_structural_heading(doc, "ПЕРЕЛІК ДЖЕРЕЛ", page_break=True)
     refs = [
@@ -530,36 +530,20 @@ def build_conclusions_and_refs(doc):
         "12. ISO/IEC/IEEE 29148:2018. Systems and software engineering — Life cycle processes — Requirements engineering. Geneva : ISO, 2018. 104 p.",
         "13. ISO/IEC/IEEE 42010:2022. Software, systems and enterprise — Architecture description. Geneva : ISO, 2022. 74 p.",
         "14. ISO/IEC 25010:2023. Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Product quality model. Geneva : ISO, 2023. 52 p.",
-        "15. ISO/IEC/IEEE 29119-1:2022. Software and systems engineering — Software testing — Part 1: General concepts. Geneva : ISO, 2022. 68 p.",
-        "16. Martin R. C. Clean Architecture: A Craftsman's Guide to Software Structure and Design. Boston : Prentice Hall, 2017. 432 p.",
-        "17. Fowler M. Patterns of Enterprise Application Architecture. Boston : Addison-Wesley Professional, 2002. 560 p.",
-        "18. Evans E. Domain-Driven Design: Tackling Complexity in the Heart of Software. Boston : Addison-Wesley, 2003. 560 p.",
-        "19. Kleppmann M. Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems. Sebastopol : O'Reilly Media, 2017. 616 p.",
-        "20. Freeman A. Pro ASP.NET Core 10. New York : Apress, 2025. 1180 p.",
-        "21. Lock A. ASP.NET Core in Action. 3rd ed. Shelter Island : Manning Publications, 2023. 912 p.",
-        "22. ASP.NET Core Documentation / Microsoft Learn. 2026. URL: https://learn.microsoft.com/en-us/aspnet/core/ (дата звернення: 11.11.2026).",
-        "23. Handle errors in ASP.NET Core web APIs (Problem Details RFC 9457) / Microsoft Learn. 2026. URL: https://learn.microsoft.com/en-us/aspnet/core/web-api/handle-errors (дата звернення: 11.11.2026).",
-        "24. Microsoft.Data.Sqlite Overview and Transactions / Microsoft Learn. 2026. URL: https://learn.microsoft.com/en-us/dotnet/standard/data/sqlite/ (дата звернення: 11.11.2026).",
-        "25. SQLite Transactional SQL Engine Documentation : Write-Ahead Logging (WAL) and BEGIN IMMEDIATE. 2026. URL: https://www.sqlite.org/wal.html (дата звернення: 11.11.2026).",
-        "26. SQLite Query Planner and Composite B-Tree Indexes. 2026. URL: https://www.sqlite.org/queryplanner.html (дата звернення: 11.11.2026).",
-        "27. React 19 Official Documentation / Meta Open Source. 2026. URL: https://react.dev/ (дата звернення: 11.11.2026).",
-        "28. Vite Next Generation Frontend Tooling Documentation. 2026. URL: https://vite.dev/guide/ (дата звернення: 11.11.2026).",
-        "29. MDN Web Docs: CSS Grid Layout and Responsive Web Design / Mozilla Foundation. 2026. URL: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout (дата звернення: 11.11.2026).",
-        "30. Web Vitals: Essential metrics for a healthy site (LCP, INP, CLS) / Google Developers. 2025. URL: https://web.dev/articles/vitals (дата звернення: 11.11.2026).",
-        "31. Playwright End-to-End Testing Framework Documentation / Microsoft. 2026. URL: https://playwright.dev/ (дата звернення: 11.11.2026).",
-        "32. Cormen T. H., Leiserson C. E., Rivest R. L., Stein C. Introduction to Algorithms. 4th ed. Cambridge : MIT Press, 2022. 1312 p.",
-        "33. Allen J. F. Maintaining knowledge about temporal intervals // Communications of the ACM. 1983. Vol. 26, No. 11. P. 832–843.",
-        "34. Snodgrass R. T. Developing Time-Oriented Database Applications in SQL. San Francisco : Morgan Kaufmann, 1999. 504 p.",
-        "35. Goldberg D. What Every Computer Scientist Should Know About Floating-Point Arithmetic // ACM Computing Surveys. 1991. Vol. 23, No. 1. P. 5–48.",
-        "36. Rfc2898DeriveBytes.Pbkdf2 Method (System.Security.Cryptography) / Microsoft Learn. 2026. URL: https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.rfc2898derivebytes.pbkdf2 (дата звернення: 11.11.2026).",
-        "37. Booqable Rental Software Documentation: Inventory & Availability Calendar. 2025. URL: https://booqable.com/features/ (дата звернення: 11.11.2026).",
-        "38. EZRentOut Equipment Rental Management System Overview. 2025. URL: https://ezo.io/ezrentout/ (дата звернення: 11.11.2026).",
-        "39. Newman S. Monolith to Microservices: Evolutionary Patterns to Transform Your Monolith. Sebastopol : O'Reilly Media, 2019. 272 p.",
-        "40. Richards M., Ford N. Fundamentals of Software Architecture: An Engineering Approach. Sebastopol : O'Reilly Media, 2020. 432 p.",
-        "41. Chacon S., Straub B. Pro Git. 2nd ed. New York : Apress, 2014. 456 p. URL: https://git-scm.com/book/en/v2 (дата звернення: 11.11.2026).",
+        "15. Martin R. C. Clean Architecture: A Craftsman's Guide to Software Structure and Design. Boston : Prentice Hall, 2017. 432 p.",
+        "16. Evans E. Domain-Driven Design: Tackling Complexity in the Heart of Software. Boston : Addison-Wesley, 2003. 560 p.",
+        "17. Kleppmann M. Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems. Sebastopol : O'Reilly Media, 2017. 616 p.",
+        "18. Freeman A. Pro ASP.NET Core 10. New York : Apress, 2025. 1180 p.",
+        "19. SQLite Transactional SQL Engine Documentation : Write-Ahead Logging (WAL) and BEGIN IMMEDIATE. 2026. URL: https://www.sqlite.org/wal.html (дата звернення: 11.11.2026).",
+        "20. React 19 Official Documentation / Meta Open Source. 2026. URL: https://react.dev/ (дата звернення: 11.11.2026).",
+        "21. Vite Next Generation Frontend Tooling Documentation. 2026. URL: https://vite.dev/guide/ (дата звернення: 11.11.2026).",
+        "22. Web Vitals: Essential metrics for a healthy site (LCP, INP, CLS) / Google Developers. 2025. URL: https://web.dev/articles/vitals (дата звернення: 11.11.2026).",
+        "23. Playwright End-to-End Testing Framework Documentation / Microsoft. 2026. URL: https://playwright.dev/ (дата звернення: 11.11.2026).",
+        "24. Allen J. F. Maintaining knowledge about temporal intervals // Communications of the ACM. 1983. Vol. 26, No. 11. P. 832–843.",
+        "25. Chacon S., Straub B. Pro Git. 2nd ed. New York : Apress, 2014. 456 p. URL: https://git-scm.com/book/en/v2 (дата звернення: 11.11.2026).",
     ]
     for r in refs:
-        add_body_p(doc, r, indent_mm=12.5, line_spacing=1.35)
+        add_body_p(doc, r, indent_mm=12.5, line_spacing=1.15, space_after=0)
 
 
 def build_appendices(doc):
@@ -593,7 +577,7 @@ dotnet run --project tests/EquipmentRental.Tests/EquipmentRental.Tests.csproj"""
     # ==========================================================================
     # ДОДАТОК Б. МАТРИЦІ ВІДПОВІДНОСТІ, ПРОТОКОЛ ПРИЙМАННЯ ТА КОНТРОЛЬНІ ФОРМИ (Додаток Е, с. 84–88)
     # ==========================================================================
-    add_structural_heading(doc, "ДОДАТОК Б\nМатриці відповідності, протокол приймання та контрольні форми", page_break=True)
+    add_structural_heading(doc, "ДОДАТОК Б\nМатриці відповідності та протокол приймання", page_break=True)
 
     add_styled_table(
         doc,
@@ -667,29 +651,17 @@ dotnet run --project tests/EquipmentRental.Tests/EquipmentRental.Tests.csproj"""
     # ==========================================================================
     # ДОДАТОК В. ЛІСТИНГИ КЛЮЧОВИХ МОДУЛІВ ТА DDL-СХЕМИ БАЗИ ДАНИХ
     # ==========================================================================
-    add_structural_heading(doc, "ДОДАТОК В\nЛістинги ключових модулів та DDL-схеми бази даних", page_break=True)
+    add_structural_heading(doc, "ДОДАТОК В\nЛістинги ключових модулів та схеми БД", page_break=True)
 
     add_code_listing(
         doc,
         "В.1",
-        "DDL-схема реляційної бази даних SQLite (файл sql/init.sql)",
+        "Ключові таблиці та індекси DDL-схеми СКБД SQLite (файл sql/init.sql)",
         """PRAGMA foreign_keys = ON;
 PRAGMA journal_mode = WAL;
 
-CREATE TABLE IF NOT EXISTS users (
-    id TEXT PRIMARY KEY,
-    email TEXT NOT NULL UNIQUE,
-    full_name TEXT NOT NULL,
-    phone TEXT NOT NULL,
-    role TEXT NOT NULL CHECK (role IN ('CLIENT', 'MANAGER')),
-    password_hash TEXT NOT NULL,
-    created_at TEXT NOT NULL
-);
-
 CREATE TABLE IF NOT EXISTS tariffs (
-    id TEXT PRIMARY KEY,
-    code TEXT NOT NULL UNIQUE,
-    name TEXT NOT NULL,
+    id TEXT PRIMARY KEY, code TEXT NOT NULL UNIQUE,
     billing_unit TEXT NOT NULL CHECK (billing_unit IN ('HOUR', 'DAY')),
     rate_minor INTEGER NOT NULL CHECK (rate_minor > 0),
     deposit_minor INTEGER NOT NULL CHECK (deposit_minor >= 0),
@@ -698,59 +670,28 @@ CREATE TABLE IF NOT EXISTS tariffs (
     late_fee_per_hour_minor INTEGER NOT NULL CHECK (late_fee_per_hour_minor >= 0)
 );
 
-CREATE TABLE IF NOT EXISTS equipment_types (
-    id TEXT PRIMARY KEY,
-    slug TEXT NOT NULL UNIQUE,
-    title TEXT NOT NULL,
-    category TEXT NOT NULL,
-    brand_model TEXT NOT NULL,
-    description TEXT NOT NULL,
-    specs_json TEXT NOT NULL DEFAULT '{}',
-    tariff_id TEXT NOT NULL,
-    maintenance_buffer_hours INTEGER NOT NULL DEFAULT 2 CHECK (maintenance_buffer_hours >= 0 AND maintenance_buffer_hours <= 72),
-    active INTEGER NOT NULL DEFAULT 1 CHECK (active IN (0, 1)),
-    image_tag TEXT NOT NULL DEFAULT 'default',
-    FOREIGN KEY (tariff_id) REFERENCES tariffs(id) ON DELETE RESTRICT
-);
-
 CREATE TABLE IF NOT EXISTS equipment_units (
     id TEXT PRIMARY KEY,
-    equipment_type_id TEXT NOT NULL,
+    equipment_type_id TEXT NOT NULL REFERENCES equipment_types(id) ON DELETE CASCADE,
     inventory_code TEXT NOT NULL UNIQUE,
     serial_number TEXT NOT NULL UNIQUE,
-    condition_status TEXT NOT NULL CHECK (condition_status IN ('AVAILABLE', 'IN_MAINTENANCE', 'RETIRED')),
-    warehouse_location TEXT NOT NULL,
-    notes TEXT NOT NULL DEFAULT '',
-    FOREIGN KEY (equipment_type_id) REFERENCES equipment_types(id) ON DELETE CASCADE
+    condition_status TEXT NOT NULL CHECK (condition_status IN ('AVAILABLE','IN_MAINTENANCE','RETIRED')),
+    warehouse_location TEXT NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS bookings (
-    id TEXT PRIMARY KEY,
-    booking_number TEXT NOT NULL UNIQUE,
-    unit_id TEXT NOT NULL,
-    client_user_id TEXT NOT NULL,
-    tariff_id TEXT NOT NULL,
-    starts_at TEXT NOT NULL,
-    ends_at TEXT NOT NULL,
-    buffer_ends_at TEXT NOT NULL,
-    status TEXT NOT NULL CHECK (status IN ('PENDING', 'CONFIRMED', 'ISSUED', 'RETURNED', 'REJECTED', 'CANCELLED')),
-    purpose TEXT NOT NULL,
-    rejection_reason TEXT,
+    id TEXT PRIMARY KEY, booking_number TEXT NOT NULL UNIQUE,
+    unit_id TEXT NOT NULL REFERENCES equipment_units(id) ON DELETE RESTRICT,
+    client_user_id TEXT NOT NULL REFERENCES users(id) ON DELETE RESTRICT,
+    tariff_id TEXT NOT NULL REFERENCES tariffs(id) ON DELETE RESTRICT,
+    starts_at TEXT NOT NULL, ends_at TEXT NOT NULL, buffer_ends_at TEXT NOT NULL,
+    status TEXT NOT NULL CHECK (status IN ('PENDING','CONFIRMED','ISSUED','RETURNED','REJECTED','CANCELLED')),
     billed_units INTEGER NOT NULL CHECK (billed_units > 0),
-    unit_rate_minor INTEGER NOT NULL CHECK (unit_rate_minor > 0),
     base_price_minor INTEGER NOT NULL CHECK (base_price_minor > 0),
     deposit_minor INTEGER NOT NULL CHECK (deposit_minor >= 0),
-    late_hours INTEGER NOT NULL DEFAULT 0 CHECK (late_hours >= 0),
-    late_fee_minor INTEGER NOT NULL DEFAULT 0 CHECK (late_fee_minor >= 0),
+    late_hours INTEGER NOT NULL DEFAULT 0, late_fee_minor INTEGER NOT NULL DEFAULT 0,
     total_price_minor INTEGER NOT NULL CHECK (total_price_minor > 0),
-    actual_issued_at TEXT,
-    actual_returned_at TEXT,
-    created_at TEXT NOT NULL,
-    updated_at TEXT NOT NULL,
-    version INTEGER NOT NULL DEFAULT 1 CHECK (version >= 1),
-    FOREIGN KEY (unit_id) REFERENCES equipment_units(id) ON DELETE RESTRICT,
-    FOREIGN KEY (client_user_id) REFERENCES users(id) ON DELETE RESTRICT,
-    FOREIGN KEY (tariff_id) REFERENCES tariffs(id) ON DELETE RESTRICT
+    version INTEGER NOT NULL DEFAULT 1 CHECK (version >= 1)
 );
 
 CREATE INDEX IF NOT EXISTS idx_bookings_unit_interval
