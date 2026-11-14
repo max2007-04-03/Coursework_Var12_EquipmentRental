@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>EquipmentRental.WebApi</RootNamespace>
+    <NoWarn>NU1903</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EquipmentRental.Domain\EquipmentRental.Domain.csproj" />
+    <ProjectReference Include="..\EquipmentRental.Application\EquipmentRental.Application.csproj" />
+    <ProjectReference Include="..\EquipmentRental.Infrastructure\EquipmentRental.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
