@@ -201,12 +201,22 @@ public static PriceCalculationResult CalculatePrice(
             "Вкладка «2. Календар доступності та оформлення оренди» (позиція «Інверторний генератор Honda EU22i»)"
         )
 
-    add_screenshot_placeholder(
-        doc,
-        "4.6",
-        "Відображення конфлікту накладання на технічну перерву (409 Conflict) та форми черги очікування (Waitlist)",
-        "Вкладка «2. Календар» — натиснуто пресет «Накладання на тех. перерву (16.11 10:30)» та кнопку відправлення заявки"
-    )
+    fig_4_6_path = os.path.join(root_dir, "docs", "screenshots", "fig_4_6_conflict_waitlist.png")
+    if os.path.exists(fig_4_6_path):
+        add_figure(
+            doc,
+            fig_4_6_path,
+            "4.6",
+            "Відображення конфлікту накладання на технічну перерву (409 Conflict) та форми черги очікування (Waitlist)",
+            width_mm=160
+        )
+    else:
+        add_screenshot_placeholder(
+            doc,
+            "4.6",
+            "Відображення конфлікту накладання на технічну перерву (409 Conflict) та форми черги очікування (Waitlist)",
+            "Вкладка «2. Календар» — натиснуто пресет «Накладання на тех. перерву (16.11 10:30)» та кнопку відправлення заявки"
+        )
 
     add_screenshot_placeholder(
         doc,
