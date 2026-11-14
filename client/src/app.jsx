@@ -989,10 +989,10 @@ export function EquipmentRentalApp() {
                       </div>
                     </dl>
 
-                    {/* Погоджене ускладнення: Черга очікування при конфлікті інтервалів */}
+                    {/* Черга очікування при конфлікті інтервалів */}
                     {!previewData.isAvailable && previewData.errorCode === "INTERVAL_CONFLICT" && (
                       <div className="waitlist-offer-box">
-                        <h4>Погоджене ускладнення: Запис у чергу очікування (Waitlist)</h4>
+                        <h4>Запис у чергу очікування (Waitlist)</h4>
                         <p>
                           Обраний екземпляр зайнятий (заявка <strong>{previewData.conflictingBookingNumber}</strong>).
                           Ви можете стати в чергу очікування: у разі скасування або відхилення бронювання система автоматично переведе ваш запит у стан <code>NOTIFIED</code>.
