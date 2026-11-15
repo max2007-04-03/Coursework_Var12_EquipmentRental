@@ -23,8 +23,11 @@ client/dist/
 Thumbs.db
 .DS_Store
 
-# Python artifacts
+# Python artifacts and local scripts
 __pycache__/
 *.pyc
 *.pyo
 .pytest_cache/
+*.py
+ІНСТРУКЦІЯ_ДЛЯ_СКРІНШОТІВ.md
+

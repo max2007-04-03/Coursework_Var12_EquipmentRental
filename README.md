@@ -78,9 +78,6 @@ Coursework_Var12_EquipmentRental/
 │   └── EquipmentRental.WebApi/             # Контролери REST API, сесійна автентифікація та статика wwwroot
 ├── tests/
 │   └── EquipmentRental.Tests/              # Набір модульних/інтеграційних тестів і стенд продуктивності
-├── capture_e2e_and_screenshots.py          # Скрипт наскрізної перевірки у браузері через Playwright
-├── generate_diagrams.py                    # Генератор схем і графіків продуктивності
-├── generate_coursework_report.py           # Генератор пояснювальної записки (.docx та .pdf)
 ├── Пояснювальна_записка_Сливка_АІ-243_Варіант12.docx
 ├── Пояснювальна_записка_Сливка_АІ-243_Варіант12.pdf
 ├── EquipmentRental.sln
